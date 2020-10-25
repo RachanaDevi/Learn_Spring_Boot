@@ -6,9 +6,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class TestController {
 
-     @RequestMapping("/")
-    public String firstHandler(){
+    @RequestMapping("/test")
+    public String test(){
          System.out.println("This is home page");
         return "test";
+    }
+
+    @RequestMapping("/contact")
+    public String contact(){
+        System.out.println("This is contact page");
+        return "contact";
     }
 }
